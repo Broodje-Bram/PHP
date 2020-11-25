@@ -3,7 +3,7 @@
   <component name="WebServers">
     <option name="servers">
       <webServer id="ae862153-c4ea-441c-a359-336d791e19a9" name="PHPServer" url="http://broodjebram.epizy.com">
-        <fileTransfer host="ftpupload.net" port="21">
+        <fileTransfer rootFolder="/htdocs" host="ftpupload.net" port="21">
           <advancedOptions>
             <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
           </advancedOptions>
