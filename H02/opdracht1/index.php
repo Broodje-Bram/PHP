@@ -5,4 +5,4 @@ $c = "die niet werken  ";
 $d = 10000;
 $e = " manieren gevonden ";
 
-echo $a.$b.$d.$e.$c;
+echo $a.$b.$d.$e.$c."<br>"."-Thomas Edison";
