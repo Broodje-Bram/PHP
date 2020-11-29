@@ -5,6 +5,9 @@ if (isset($_SESSION["username"])) {
     if ($_SESSION["username"] == "admin" ) {
         echo "<h1>Gij bent een Admin Mr. ".$_SESSION["username"]."</h1>";
     }
+    else if ($_SESSION["username"] == "Bram") {
+        echo "<h1>Gij bent een Broodje geen Admin Mr. Broodje ".$_SESSION["username"]."</h1>";
+    }
     else {
         echo "<h1>Sorry maar je hebt geen toegang hiervoor Mr. " . $_SESSION["username"] . "</h1>";
     }
