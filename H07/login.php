@@ -1,5 +1,41 @@
 <?php
 session_start();
+
+$host = "sql313.epizy.com";
+$port = "3306";
+$user = "epiz_27295900";
+$pass = "E3D7DAZWbkF";
+$db = "epiz_27295900_DBlogin";
+$message = "";
+
+try {
+    $dbh = new PDO("mysql:host=" . $host . ";dbname=" . $db . ";port=" . $port, $user, $pass);
+    $dbh->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
+
+
+    if (isset($_POST["knop"])) {
+        $query = "SELECT * FROM gebruikers WHERE username = :username AND password = :password";
+        $statement = $dbh->prepare($query);
+        $statement->execute(
+            array(
+                'username' => $_POST["username"], 'password' => $_POST["password"]
+            )
+        );
+        $count = $statement->rowCount();
+
+        if ($count > 0) {
+            $_SESSION["username"] = $_POST["username"];
+            header("location:index.php");
+        }
+        else {
+            $message = "<label>Username of Password is verkeerd</label>";
+        }
+    }
+}
+
+catch(PDOException $error) {
+ $error = "Database kan niet verbinden";
+}
 ?>
 
 <!DOCTYPE html>
@@ -14,11 +50,17 @@ session_start();
     </style>
 </head>
 <body>
+<?php
+if (isset($message)) {
+    echo $message;
+}
+
+?>
  <h1>Login</h1>
-<form action="index.php" method="post">
+<form method="post">
     Gebruikersnaam <input class="input" type="text" id="username" name="username" value="" required>
     <br> <br>
-    Wachtwoord <input class="input" type="password" id="pwd" name="pwd" value="" required>
+    Wachtwoord <input class="input" type="password" id="password" name="password" value="" required>
     <br> <br>
     <input type="submit" class="knop" name="knop" value="Send">
 </form>

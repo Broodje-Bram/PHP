@@ -1,34 +1,17 @@
 <?php
 session_start();
 
-$host = "sql313.epizy.com";
-$port = "3306";
-$user = "epiz_27295900";
-$pass = "E3D7DAZWbkF";
-$db = "epiz_27295900_DBlogin";
-
-$username = $_POST["username"];
-$password = $_POST["pwd"];
-
-$dbh = new PDO("mysql:host=" . $host . ";dbname=" . $db . ";port=" . $port, $user, $pass);
-
-$query = "SELECT * FROM gebruikers WHERE username = :username AND password = :password";
-$statement = $dbh->prepare($query);
-$statement->execute(
-    array(
-        'username' => $username, 'password' => $password
-    )
-);
-$count = $statement->rowCount();
-if ($count > 0) {
-
+if (isset($_SESSION["username"])) {
+    if ($_SESSION["username"] == "Bram" ) {
+        echo "<h1>whats up mijn Broodje Bram hier heb je een Baguette</h1>";
+        echo "<img src='Img/baguette.png'>";
+    }
+    else {
+        echo "<h1>Login SUCCESFUL, WELKOM YOU SON OF A " . $_SESSION["username"] . "</h1>";
+    }
 }
 else {
     header("location:login.php");
-}
-
-if (isset($_POST["knop"])) {
-    echo "Login SUCCESFUL, WELKOM YOU SON OF A " . $username;
 }
 ?>
 
@@ -36,8 +19,18 @@ if (isset($_POST["knop"])) {
 <html>
 <head>
     <title>Broodje Website</title>
+    <style>
+        img {
+            position: absolute;
+            height: 200px;
+            width: 200px;
+            left: 46%;
+            right: 46%;
+        }
+    </style>
 </head>
 <body>
+<p><a href="admin.php">Ga naar de Admin page</a></p>
 <p><a href="logout.php">Logout</a></p>
 </body>
 </html>
