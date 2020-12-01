@@ -6,7 +6,7 @@ function Celciusnaarfahrenheit() {
     $f = NULL;
     $f = ($c * 9 / 5) + 32;
 
-    echo $f."°";
+    echo $f."°F";
 }
 
 function deelbaar3() {
