@@ -10,7 +10,7 @@ foreach ($ditprogramma->getprogramma() as $p) {
     echo $p."<br>";
 }
 
-$nieuwliedje = new liedjes("Laat je gaan", " Queen" );
+$nieuwliedje = new liedjes("Laat je gaan", " Gio Swikker" );
 
 $ditprogramma->voegliedjetoe($nieuwliedje);
 
