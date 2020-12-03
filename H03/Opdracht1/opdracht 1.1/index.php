@@ -15,7 +15,7 @@
 </style>
 <?php
     for ($i = 1; $i<=10; $i++){
-        echo "<img src='../Img/Broodje".$i.".png'>";
+        echo "<img src='../img/Broodje".$i.".png'>";
     }
 ?>
 </body>

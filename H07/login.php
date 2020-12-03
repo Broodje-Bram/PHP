@@ -7,6 +7,9 @@ $user = "epiz_27295900";
 $pass = "E3D7DAZWbkF";
 $db = "epiz_27295900_DBlogin";
 $message = "";
+$password = $_POST["password"];
+
+// salt en password hash
 
 try {
     $dbh = new PDO("mysql:host=" . $host . ";dbname=" . $db . ";port=" . $port, $user, $pass);

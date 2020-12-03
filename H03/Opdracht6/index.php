@@ -26,19 +26,19 @@ $bommetjeleden = 23;
 
  echo  "$zwemclubs[0]";
 for ($i =5; $i <= $spartelleden; $i+= 5) {
-    echo "<img src='Img/swim.jpg'>";
+    echo "<img src='img/swim.jpg'>";
 }
 echo  "$zwemclubs[1]";
 for ($i =5; $i <= $waterleden; $i+= 5) {
-    echo "<img src='Img/swim.jpg'>";
+    echo "<img src='img/swim.jpg'>";
 }
 echo  "$zwemclubs[2]";
 for ($i =5; $i <= $plonsleden; $i+= 5) {
-    echo "<img src='Img/swim.jpg'>";
+    echo "<img src='img/swim.jpg'>";
 }
 echo  "$zwemclubs[3]";
 for ($i =5; $i <= $bommetjeleden; $i+= 5) {
-    echo "<img src='Img/swim.jpg'>";
+    echo "<img src='img/swim.jpg'>";
 }
 
 ?>

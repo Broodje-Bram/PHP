@@ -10,15 +10,23 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5784f191-07c0-4fc8-8203-d23ad6f460c5" name="Default Changelist" comment="Hoofdstuk 7 nog iets beter gemaakt">
-      <change afterPath="$PROJECT_DIR$/H07/Img/BroodjeBramBackground.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/H08/Opdracht_radioprogramma/index.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/H08/Opdracht_radioprogramma/liedjes.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/H08/Opdracht_radioprogramma/programma.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/H09/Css/index.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/H09/index.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/H09/overzicht.php" afterDir="false" />
+    <list default="true" id="5784f191-07c0-4fc8-8203-d23ad6f460c5" name="Default Changelist" comment="Hoofdstuk 8 af">
+      <change afterPath="$PROJECT_DIR$/H09/Css/img/baguette.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/H09/Dataophalen.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/H09/broodjeaanpassen.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/H09/broodjetoevoegen.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/H09/details.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/H03/Opdracht1/opdracht 1.1/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/H03/Opdracht1/opdracht 1.1/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/H03/Opdracht1/opdracht1.2/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/H03/Opdracht1/opdracht1.2/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/H03/Opdracht4/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/H03/Opdracht4/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/H03/Opdracht6/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/H03/Opdracht6/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/H05/Beasties/resultaat.php" beforeDir="false" afterPath="$PROJECT_DIR$/H05/Beasties/resultaat.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/H07/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/H07/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/H07/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/H07/login.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/H09/Css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/H09/Css/broodje.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/H09/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/H09/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/H09/overzicht.php" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,23 +62,24 @@
     <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/H07/Img" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/H09/Css/Img" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="settings.editor.splitter.proportion" value="0.25879917" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Bramg\PhpstormProjects\PHP\H07\Img" />
-      <recent name="C:\Users\Bramg\PhpstormProjects\PHP\H03\Opdracht6" />
-      <recent name="C:\Users\Bramg\PhpstormProjects\PHP\H03\Opdracht6\Img" />
-      <recent name="C:\Users\Bramg\PhpstormProjects\PHP\H03\Opdracht4\Img" />
-      <recent name="C:\Users\Bramg\PhpstormProjects\PHP\H03\Opdracht1\opdracht 1.1" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Bramg\PhpstormProjects\PHP\H09\Css\Img" />
       <recent name="C:\Users\Bramg\PhpstormProjects\PHP\H07\Img" />
       <recent name="C:\Users\Bramg\PhpstormProjects\PHP\H05\Beasties\Img" />
       <recent name="C:\Users\Bramg\PhpstormProjects\PHP\H03\Opdracht1\Img" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Bramg\PhpstormProjects\PHP\H09\Css\Img" />
+      <recent name="C:\Users\Bramg\PhpstormProjects\PHP\H08\MonkeyBusiness\Img" />
+      <recent name="C:\Users\Bramg\PhpstormProjects\PHP\H07\Img" />
+      <recent name="C:\Users\Bramg\PhpstormProjects\PHP\H03\Opdracht6" />
+      <recent name="C:\Users\Bramg\PhpstormProjects\PHP\H03\Opdracht6\Img" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -93,6 +102,10 @@
       <workItem from="1606674165653" duration="8042000" />
       <workItem from="1606682938418" duration="244000" />
       <workItem from="1606752571847" duration="6983000" />
+      <workItem from="1606816855306" duration="112000" />
+      <workItem from="1606818420848" duration="4049000" />
+      <workItem from="1607013619346" duration="700000" />
+      <workItem from="1607015838547" duration="11801000" />
     </task>
     <task id="LOCAL-00001" summary="1e opdracht?">
       <created>1605977692533</created>
@@ -192,7 +205,21 @@
       <option name="project" value="LOCAL" />
       <updated>1606682199482</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="nog iets beter gemaakt">
+      <created>1606816898555</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1606816898555</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Hoofdstuk 8 af">
+      <created>1606820388961</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1606820388961</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -222,7 +249,9 @@
     <MESSAGE value="Hoofdstuk 7 bijna af" />
     <MESSAGE value="Hoofdstuk 7 af" />
     <MESSAGE value="Hoofdstuk 7 nog iets beter gemaakt" />
-    <option name="LAST_COMMIT_MESSAGE" value="Hoofdstuk 7 nog iets beter gemaakt" />
+    <MESSAGE value="nog iets beter gemaakt" />
+    <MESSAGE value="Hoofdstuk 8 af" />
+    <option name="LAST_COMMIT_MESSAGE" value="Hoofdstuk 8 af" />
   </component>
   <component name="WindowStateProjectService">
     <state x="652" y="65" key="#CLI_Interpreters" timestamp="1605976064819">
@@ -245,6 +274,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1606420574361" />
+    <state x="449" y="148" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1607013714487">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="449" y="148" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1536.824@0.0.1536.824" timestamp="1607013714487" />
     <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1606340589998">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -253,18 +286,18 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="853" y="166" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1606321097241" />
-    <state x="604" y="336" key="NewPhpFileDialog" timestamp="1606761066677">
+    <state x="604" y="336" key="NewPhpFileDialog" timestamp="1607023220297">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="604" y="336" key="NewPhpFileDialog/0.0.1536.824@0.0.1536.824" timestamp="1606761066677" />
+    <state x="604" y="336" key="NewPhpFileDialog/0.0.1536.824@0.0.1536.824" timestamp="1607023220297" />
     <state x="277" y="57" key="SettingsEditor" timestamp="1606492687310">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="277" y="57" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1606492687310" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1606682207273">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1606820420651">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1606682207273" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1606820420651" />
     <state x="595" y="142" key="ftp.server.browser" timestamp="1606232993778">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -273,10 +306,14 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="570" y="319" key="git4idea.remote.GitConfigureRemotesDialog/0.0.1536.824@0.0.1536.824" timestamp="1606231878517" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1606678926480">
+    <state x="425" y="187" key="run.anything.popup" timestamp="1607028093312">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1606678926480" />
+    <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1607028093312" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1607027531414">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1607027531414" />
     <state x="565" y="150" key="webDeployment.PermissionsDialog.Tabs" timestamp="1606231745700">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
