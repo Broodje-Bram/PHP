@@ -26,6 +26,9 @@ function tabelmaken()
         echo $row["soort"];
         echo "</td>";
         echo "<td>";
+        echo $row["gewicht"];
+        echo "</td>";
+        echo "<td>";
         echo "<nav> <a href=\"details.php?id=" . $row['naam'] . "\">details</a></nav>";
         echo "</td>";
         echo "<tr>";

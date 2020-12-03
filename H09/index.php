@@ -36,6 +36,9 @@ include('Dataophalen.php');
             <td>
                 Soort
             </td>
+            <td>
+                Gewicht
+            </td>
         </tr>
         <?php
         TabelMaken();

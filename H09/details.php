@@ -48,7 +48,9 @@ function details($detail)
     <p>
         De Broodjes vorm is   <?php details("vorm"); ?><br><br>
 
-        Het soort meel is <?php details("soort"); ?><br>
+        Het soort meel is <?php details("soort"); ?><br><br>
+
+        Het gewicht van het broodje is  <?php details("gewicht"); ?><br>
     </p>
     <img src="<?php details("image"); ?>">
 </div>

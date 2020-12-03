@@ -12,6 +12,7 @@ if(isset($_POST['knop'])) {
         $naam = $_POST["naam"];
         $vorm = $_POST["vorm"];
         $soort = $_POST["soort"];
+        $gewicht = $_POST["gewicht"];
         $folder ="uploads/";
         $image = $_FILES['userfile']['name'];
         $path = $folder.$image ;
@@ -23,11 +24,11 @@ if(isset($_POST['knop'])) {
         $ext=pathinfo($filename, PATHINFO_EXTENSION);
         move_uploaded_file( $_FILES['userfile'] ['tmp_name'], $path);
 
-        $query = "INSERT INTO `broodjes`(`naam`, `vorm`, `soort`, `image`) VALUES (:naam,:vorm,:soort,:image)";
+        $query = "INSERT INTO `broodjes`(`naam`, `vorm`, `soort`, `gewicht`,`image`) VALUES (:naam,:vorm,:soort, :gewicht,:image)";
 
         $result = $dbh->prepare($query);
 
-        $execute = $result->execute(array(":naam"=>$naam,":vorm"=>$vorm,":soort"=>$soort, ":image" => $image));
+        $execute = $result->execute(array(":naam"=>$naam,":vorm"=>$vorm,":soort"=>$soort, ":gewicht" => $gewicht,":image" => $image));
 
         if ($execute) {
             header("location:index.php");
@@ -74,6 +75,10 @@ if(isset($_POST['knop'])) {
     <br>
     <label for="type">Soort meel:</label>
     <input type="text" class="input" name="soort" required>
+    <br>
+    <br>
+    <label for="type">Gewicht:</label>
+    <input type="text" class="input" name="gewicht" required>
     <br>
     <br>
     <button type="submit" name="knop" >Submit</button>

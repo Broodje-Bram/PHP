@@ -13,6 +13,7 @@ if(isset($_POST['knop'])) {
         $naam = $_POST["naam"];
         $vorm = $_POST["vorm"];
         $soort = $_POST["soort"];
+        $gewicht = $_POST["gewicht"];
         $id = $_GET['id'];
 
         $folder ="uploads/";
@@ -26,10 +27,10 @@ if(isset($_POST['knop'])) {
         $ext=pathinfo($filename, PATHINFO_EXTENSION);
         move_uploaded_file( $_FILES['bestandaanpassen'] ['tmp_name'], $path);
 
-        $query = "UPDATE broodjes SET naam=:naam, vorm=:vorm, soort=:soort, image=:image WHERE naam =:id";
+        $query = "UPDATE broodjes SET naam=:naam, vorm=:vorm, soort=:soort, gewicht=:gewicht,image=:image WHERE naam =:id";
         $result = $dbh->prepare($query);
 
-        $execute = $result->execute(array(":naam" => $naam, ":vorm" => $vorm, ":soort" => $soort, ":image" => $image,":id" => $id));
+        $execute = $result->execute(array(":naam" => $naam, ":vorm" => $vorm, ":soort" => $soort, ":gewicht" => $gewicht,":image" => $image,":id" => $id));
         if ($execute) {
             header("location:index.php");
         }
@@ -79,6 +80,10 @@ if(isset($_POST['knop'])) {
     <br>
     <label for="type">Soort:</label>
     <input type="text" class="input" name="soort" value="" required>
+    <br>
+    <br>
+    <label for="type">Gewicht:</label>
+    <input type="text" class="input" name="gewicht" value="" required>
     <br>
     <br>
     <button type="submit" name="knop">Submit</button>
