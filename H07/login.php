@@ -7,9 +7,6 @@ $user = "epiz_27295900";
 $pass = "E3D7DAZWbkF";
 $db = "epiz_27295900_DBlogin";
 $message = "";
-$password = $_POST["password"];
-
-// salt en password hash
 
 try {
     $dbh = new PDO("mysql:host=" . $host . ";dbname=" . $db . ";port=" . $port, $user, $pass);
@@ -17,11 +14,19 @@ try {
 
 
     if (isset($_POST["knop"])) {
+        $password = $_POST["password"];
+
+        // salt en password hash
+        $salt = "@!--778gh#00!jjs";
+        $passwordWithSalt = $password . $salt;
+        $hash = hash("sha256", $passwordWithSalt);
+
+
         $query = "SELECT * FROM gebruikers WHERE username = :username AND password = :password";
         $statement = $dbh->prepare($query);
         $statement->execute(
             array(
-                'username' => $_POST["username"], 'password' => $_POST["password"]
+                'username' => $_POST["username"], 'password' => $hash
             )
         );
         $count = $statement->rowCount();
