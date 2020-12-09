@@ -10,8 +10,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5784f191-07c0-4fc8-8203-d23ad6f460c5" name="Default Changelist" comment="Hoofdstuk 9 gewicht vergeten te adden en nu is geadd">
+    <list default="true" id="5784f191-07c0-4fc8-8203-d23ad6f460c5" name="Default Changelist" comment="Hashing and Salt is toegevoegd">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/H07/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/H07/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/H07/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/H07/login.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -97,7 +98,9 @@
       <workItem from="1607118316108" duration="123000" />
       <workItem from="1607361843508" duration="215000" />
       <workItem from="1607362110651" duration="122000" />
-      <workItem from="1607452133751" duration="1627000" />
+      <workItem from="1607452133751" duration="1723000" />
+      <workItem from="1607463159025" duration="196000" />
+      <workItem from="1607547121858" duration="135000" />
     </task>
     <task id="LOCAL-00001" summary="1e opdracht?">
       <created>1605977692533</created>
@@ -225,7 +228,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607031855146</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Hashing and Salt is toegevoegd">
+      <created>1607453786829</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1607453786829</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -259,7 +269,8 @@
     <MESSAGE value="Hoofdstuk 8 af" />
     <MESSAGE value="Hoofdstuk 9 af" />
     <MESSAGE value="Hoofdstuk 9 gewicht vergeten te adden en nu is geadd" />
-    <option name="LAST_COMMIT_MESSAGE" value="Hoofdstuk 9 gewicht vergeten te adden en nu is geadd" />
+    <MESSAGE value="Hashing and Salt is toegevoegd" />
+    <option name="LAST_COMMIT_MESSAGE" value="Hashing and Salt is toegevoegd" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

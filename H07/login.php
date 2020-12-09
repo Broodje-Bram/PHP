@@ -62,7 +62,6 @@ catch(PDOException $error) {
 if (isset($message)) {
     echo $message;
 }
-
 ?>
  <h1>Login</h1>
 <a> username = admin  username = gert <br> <br> password = Admin  password = gertdebeste</a>

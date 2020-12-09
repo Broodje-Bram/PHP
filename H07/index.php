@@ -4,7 +4,7 @@ session_start();
 if (isset($_SESSION["username"])) {
     if ($_SESSION["username"] == "Bram" ) {
         echo "<h1>whats up mijn Broodje Bram hier heb je een Baguette</h1>";
-        echo "<img src='img/baguette.png'>";
+        echo "<img src='Img/baguette.png'>";
     }
     else {
         echo "<h1>Login SUCCESFUL, WELKOM YOU SON OF A " . $_SESSION["username"] . "</h1>";
